@@ -1,4 +1,4 @@
-# Now Cards
+# Now Cards Boilerplate
 Dismissable cards similar to Google Now
 
 ### Getting Started

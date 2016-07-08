@@ -14,6 +14,7 @@ function removeCard(elem) {
 var draggable = Draggable.create(".draggable", {
 	type:"x",
 	lockAxis:true,
+  throwProps:true,
 	onClick:function() {
 		console.log("clicked");
     //removeCard(this.target);

@@ -37,7 +37,25 @@
     </div>
 
     <div class="card-stack">
-      <div class="card draggable">this will be content in a card</div>
+      <div class="card height-auto draggable">
+        <div class="card-header">
+          <div class="card-header-icon"></div>
+          <div class="card-header-title">Lorem ipsum dolor sit amet</div>
+          <div class="card-header-options"><i class="material-icons">more_vert</i></div>
+        </div>
+        <div class="card-contents">
+          <div class="card-contents-img placeholder">
+            <img src="http://placehold.it/150x150">
+          </div>
+          <div class="card-contents-text card-contents-padLeft">
+            Lorem ipsum dolor sit amet, <b>consectetur adipisicing</b> elit. Impedit amet consectetur reprehenderit quam animi, nulla quo corporis modi!
+          </div>
+        </div>
+        <ul class="card-actions list-unstyled">
+          <li class="card-actions-item card-actions-item-primary"><i class="material-icons">credit_card</i>Lorem ipsum dolor <b>sit amet</b> consectetur</li>
+          <li class="card-actions-item"><i class="material-icons">arrow_forward</i>Lorem ipsum earum officia</li>
+        </ul>
+      </div>
       <div class="card draggable">this will be content in a card</div>
       <div class="card draggable">this will be content in a card</div>
       <div class="card draggable">this will be content in a card</div>
@@ -52,11 +70,11 @@
     <!-- endbuild -->
 
     <!-- <script src="https://npmcdn.com/draggabilly@2.1/dist/draggabilly.pkgd.min.js"></script> -->
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script> -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/utils/Draggable.min.js"></script>
-    <!-- <script src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js"></script> -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/utils/Draggable.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="/scripts/vendor/ThrowPropsPlugin.min.js"></script>
+
 
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>

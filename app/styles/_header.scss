@@ -1,5 +1,5 @@
 .header {
-  background: $main-color;
+  background: $main-base-color;
   padding: $padding-std-all;
   padding-left: 0;
   box-shadow: $shadow-std;
@@ -10,8 +10,11 @@
   width: 100%;
   .menu-toggle {
     float: left;
-    margin-top: -6px;
+    margin-top: -3px;
     margin-bottom: -8px;
+    background: none;
+    outline: none;
+    border: none;
   }
   &-title {
     font-weight: 800;

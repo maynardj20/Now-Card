@@ -1,12 +1,85 @@
-.card {
+.card-stack {
   padding: $padding-std-all;
+  overflow: scroll;
+}
+
+.card {
   background: $white;
   margin-bottom: 15px;
   box-shadow: $shadow-std;
   height: 200px;
-}
-
-.card-stack {
-  padding: $padding-std-all;
-  overflow: scroll;
+  &-header {
+    position: relative;
+    //margin-top: 15px;
+    height: 20px;
+    padding: $padding-std-all;
+    &-icon {
+      height: 20px;
+      width: 20px;
+      background: $gray-lightest;
+      border-radius: 10px;
+      display: inline-block;
+      vertical-align: top;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+    &-title {
+      display: inline-block;
+      vertical-align: top;
+      position: absolute;
+      top: 15px;
+      left: 45px;
+    }
+    &-options {
+      display: inline-block;
+      vertical-align: top;
+      position: absolute;
+      top: 12px;
+      right: 15px;
+      color: $gray-lighter;
+    }
+  }
+  &-contents {
+    padding: $padding-std-all;
+    margin-top: 10px;
+    &-img {
+      width: 20%;
+      display: inline-block;
+      vertical-align: top;
+      &.placeholder {
+        background-color: $gray-lightest;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    &-text {
+      width: 75%;
+      display: inline-block;
+      vertical-align: top;
+    }
+    &-padLeft {
+      margin-left: 3%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  &-actions {
+    width: 100%;
+    &-item {
+      vertical-align: middle;
+      padding: 15px;
+      border-top: 1px solid $gray-lightest;
+      &-primary {
+        color: $blue;
+      }
+      i {
+        vertical-align: middle;
+        margin-top: -3px;
+        margin-right: 10px;
+        font-size: 20px;
+      }
+    }
+  }
 }
