@@ -1,5 +1,7 @@
-# now-cards
+# Now Cards
 Dismissable cards similar to Google Now
+
+### Getting Started
 
 To get started, run `npm install && bower install`
 
