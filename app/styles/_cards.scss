@@ -1,0 +1,12 @@
+.card {
+  padding: $padding-std-all;
+  background: $white;
+  margin-bottom: 15px;
+  box-shadow: $shadow-std;
+  height: 200px;
+}
+
+.card-stack {
+  padding: $padding-std-all;
+  overflow: scroll;
+}

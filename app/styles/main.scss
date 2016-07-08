@@ -1,0 +1,16 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "vars";
+@import "header";
+@import "cards";
+
+
+body {
+  background: $gray-lightest;
+  font-family: Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding-top: 55px;
+}
