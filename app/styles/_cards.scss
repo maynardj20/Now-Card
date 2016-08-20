@@ -1,6 +1,45 @@
 .card-stack {
   padding: $padding-std-all;
   overflow: scroll;
+  section {
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+    &:before {
+      content: "";
+      height: 1px;
+      width: 75px;
+      margin: 0 auto 6px;
+      background-color: $black;
+      display: block;
+    }
+    &.section-red:before {
+      background-color: $red;
+    }
+    &.section-green:before {
+      background-color: $green;
+    }
+    &.section-blue:before {
+      background-color: $blue;
+    }
+    &.section-orange:before {
+      background-color: $orange;
+    }
+    .section-title {
+      font-size: 13px;
+      color: $gray;
+      margin-bottom: 10px;
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 5px;
+        height: 10px;
+        width: 20px;
+        background-image: url('../images/icn-clearAll.svg');
+      }
+    }
+  }
 }
 
 .card {
@@ -8,6 +47,7 @@
   margin-bottom: 15px;
   box-shadow: $shadow-std;
   height: 200px;
+  text-align: left;
   &-header {
     position: relative;
     //margin-top: 15px;

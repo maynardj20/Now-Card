@@ -8,7 +8,15 @@ function fadeCardReset(elem) {
   $(elem).css( "opacity", 1 );
 }
 function removeCard(elem) {
-  $(elem).slideUp("slow");
+  var sectionItems = $(elem).siblings().length;
+  //console.log(sectionItems);
+  if (sectionItems > 1) {
+    $(elem).slideUp("slow").remove();
+  }
+  else {
+    $(elem).slideUp("slow");
+    $(elem).parent('section').remove();
+  }
 }
 
 var draggable = Draggable.create(".draggable", {
